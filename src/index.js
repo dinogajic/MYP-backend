@@ -29,7 +29,7 @@ app.get("/user", async(req, res) => {
         auth.registerUser(newUser)
     }
     catch(error) {
-        /* res.status(500).json({error: error.message}) */
+        res.status(500).json({error: error.message})
         /* return res.json({ status: "error", msg: "User already exist." }); */
     }
 
