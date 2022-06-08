@@ -20,7 +20,7 @@ export default {
           } catch (error) {
             if (error.code == 11000) {
               /* return res.json({ status: "error", msg: "User already exist." }); */
-              return new Error("User already exist.")
+              throw new Error("User already exist.")
               /*  return false */
             }
             /* return res.json({ status: "error" }); */
